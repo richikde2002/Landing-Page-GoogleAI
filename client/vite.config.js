@@ -12,7 +12,4 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  build: {
-    outDir: '../api/public', // Output directory relative to the root directory
-  },
 })
