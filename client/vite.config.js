@@ -12,7 +12,4 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  build: {
-    outDir: 'dist', // Output directory relative to the root directory of the Vite project
-  },
 })
