@@ -13,6 +13,6 @@ export default defineConfig({
   },
   plugins: [react()],
   build: {
-    outDir: 'client/dist',
+    outDir: '../api/public', // Output directory relative to the root directory
   },
 })
