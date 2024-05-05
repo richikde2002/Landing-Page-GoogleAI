@@ -42,6 +42,8 @@ const Timeline = () => {
   }
 
   const handleReset = () => {
+    setMorningUrl(null);
+    setUnlockRan(false);
     setActiveStep(0);
   };
 
@@ -53,29 +55,30 @@ const Timeline = () => {
     try {
       // const response = await axios.get("http://3.110.204.189/script/?scriptname=morningSetup");
       const response = await axios.get("api/script/morningSetup");
-      console.log(response.data);
-      // setMorningUrl(response.data);
+      // console.log(response.data);
+      setMorningUrl(response.data);
     } catch (error) {
       console.error('Error: ', error);
     } finally {
       setMorningLoading(false);
     }
   }
-  
-  const [unlockUrl, setUnlockUrl] = useState(null)
+
   const [unlockLoading, setUnlockLoading] = useState(false)
-  
+  const [unlockRan, setUnlockRan] = useState(false)
+
   const handleUnlockScript = async () => {
     setUnlockLoading(true);
     try {
       // const response = await axios.get("http://3.110.204.189/script/?scriptname=UnlockScript");
       const response = await axios.get("api/script/UnlockScript");
-      setUnlockUrl(response.data);
+      // setUnlockUrl(response.data);
       // console.log(response.data);
     } catch (error) {
       console.error('Error: ', error);
     } finally {
       setUnlockLoading(false);
+      setUnlockRan(true);
     }
   }
 
@@ -149,13 +152,17 @@ const Timeline = () => {
                           :
                           "Unlock Script"}
                       </button>
+
+                      {unlockRan && <div className='bg-green-500 text-white mx-auto max-w-48 text-center py-2 rounded-lg mt-4'>
+                        <p className='font-semibold'>Script Ran Successfully</p>
+                      </div>}
                     </p>
 
                     {/* {unlockUrl &&
                       <div className="m-2 p-2 bg-zinc-200 rounded-md border-[1px] border-zinc-300 inline-block">
                         <SuspenseImg src={unlockUrl} className="h-64 w-64 rounded-md" />
                       </div>
-                    } */}  
+                    } */}
 
 
                   </div>
