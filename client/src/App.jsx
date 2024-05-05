@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Timeline from './components/Timeline';
 import Navbar from './components/Navbar';
-import Graphic from './assets/newsletter-homepage-woman-couch 1.png';
 
 const App = () => {
   // console.log("Joy Brar");
@@ -13,7 +12,7 @@ const App = () => {
         <Timeline/>
       </div>
       <img 
-        src={Graphic} 
+        src="/newsletter-homepage-woman-couch 1.png"
         className="absolute right-0 bottom-0 max-xl:hidden z-0"
         alt="graphic"
       />
