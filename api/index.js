@@ -3,8 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const { NodeSSH } = require('node-ssh');
 
-const __dirname = path.resolve();
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
