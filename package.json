@@ -10,5 +10,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-ssh": "^13.2.0",
+    "nodemon": "^3.1.0"
+  }
 }
