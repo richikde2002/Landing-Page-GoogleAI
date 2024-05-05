@@ -15,7 +15,7 @@ const App = () => {
       <img 
         src={Graphic} 
         className="absolute right-0 bottom-0 max-xl:hidden z-0"
-        alt=""
+        alt="graphic"
       />
     </div>
   );

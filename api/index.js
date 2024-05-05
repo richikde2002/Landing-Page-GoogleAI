@@ -32,40 +32,40 @@ ssh.connect({
 //   return ssh.execCommand('pip3 install -r /home/vanshaj_arora_sg/requirements.txt');
 // })
 // .then((result) => {
-//   // Handle command execution result
-//   console.log('STDOUT: ' + result.stdout);
-//   console.log('STDERR: ' + result.stderr);
-// })
-// .catch((err) => {
-//   // Handle connection or command execution errors
-//   console.error('Error:', err);
-// });
-
-// Function to run Python script on GCP instance
-function runScript(filename, callback) {
-  let scriptPath;
-  if (filename === 'UnlockScript') {
-    scriptPath = '/home/vanshaj_arora_sg/UnlockScript.py';
-  } else if (filename === 'morningSetup') {
-    scriptPath = '/home/vanshaj_arora_sg/morningSetup.py';
-  } else {
-    scriptPath = '/home/vanshaj_arora_sg/testlit.py';
-  }
-
-  ssh.execCommand(`python3 ${scriptPath}`)
-    .then((result) => {
-      callback(null, result.stdout);
-    })
-    .catch((err) => {
-      console.error('Error:', err);
-      callback(err, null);
+  //   // Handle command execution result
+  //   console.log('STDOUT: ' + result.stdout);
+  //   console.log('STDERR: ' + result.stderr);
+  // })
+  // .catch((err) => {
+    //   // Handle connection or command execution errors
+    //   console.error('Error:', err);
+    // });
+    
+    // Function to run Python script on GCP instance
+    function runScript(filename, callback) {
+      let scriptPath;
+      if (filename === 'UnlockScript') {
+        scriptPath = '/home/vanshaj_arora_sg/UnlockScript.py';
+      } else if (filename === 'morningSetup') {
+        scriptPath = '/home/vanshaj_arora_sg/morningSetup.py';
+      } else {
+        scriptPath = '/home/vanshaj_arora_sg/testlit.py';
+      }
+      
+      ssh.execCommand(`python3 ${scriptPath}`)
+      .then((result) => {
+        callback(null, result.stdout);
+      })
+      .catch((err) => {
+        console.error('Error:', err);
+        callback(err, null);
+      });
+    }
+    
+    app.get('/api', (req, res) => {
+      res.send(`Enter script name after /script/`);
     });
-}
-
-app.get('/api', (req, res) => {
-  res.send(`Enter script name after /script/`);
-});
-
+    
 app.get('/api/script/:scriptname', (req, res) => {
   const { scriptname } = req.params;
   runScript(scriptname, (err, output) => {
