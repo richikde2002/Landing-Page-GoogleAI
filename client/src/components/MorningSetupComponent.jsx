@@ -22,7 +22,7 @@ const MorningSetupComponent = () => {
               <div className="animate-spin h-3 w-3 border-t-white border-t-2 rounded-full"></div>
             </div>
             :
-            "Pin"}
+            "PIN"}
         </button>
 
         to generate a QR Code.
