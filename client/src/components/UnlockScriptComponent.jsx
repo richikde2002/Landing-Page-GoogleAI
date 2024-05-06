@@ -22,7 +22,7 @@ const UnlockScriptComponent = () => {
               <div className="animate-spin h-3 w-3 border-t-white border-t-2 rounded-full"></div>
             </div>
             :
-            "Unlock Script"}
+            "Unpin"}
         </button>
       </p>
 
