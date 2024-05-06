@@ -11,8 +11,7 @@ const MorningSetupComponent = () => {
 
   return (
     <div>
-      <p className="text-sm">Click on the
-
+      <p className="text-sm">Click here : 
         <button
           onClick={handleMorningSetup}
           className="bg-slate-700 hover:bg-[#3a78e2] text-white rounded-md mx-1.5 px-1.5 pb-0.5 transition"
@@ -26,7 +25,7 @@ const MorningSetupComponent = () => {
             "Morning Script"}
         </button>
 
-        button to generate a QR Code in the new tab
+        to generate a QR Code.
       </p>
 
 

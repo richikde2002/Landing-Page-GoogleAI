@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { startUnlockLoading, endUnlockLoading, unlockRanOnce } from '../app/slices/unlockScriptSlice';
+import { toast } from 'react-hot-toast'
 
 const useUnlockScript = () => {
     const dispatch = useDispatch();
@@ -14,6 +15,7 @@ const useUnlockScript = () => {
         } finally {
             dispatch(endUnlockLoading());
             dispatch(unlockRanOnce());
+            toast.success('Unpinned');
         }
     }
 

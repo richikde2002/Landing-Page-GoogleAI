@@ -1,36 +1,30 @@
 export const steps = [
     {
       label: 'Factory Reset',
-      optionalLabel: 'First Step',
-      description: `Factory Data Reset our Tablet / Device and on the first screen of start-up tap multiple times until a QR Scanner comes up.`,
+      description: `Factory Data Reset your Tablet and on the first screen of start-up tap multiple times until a QR Scanner comes up.`,
     },
     {
       label: 'Morning Setup',
       description: 'Click on the morning setup button to generate a QR Code in the new tab.',
     },
     {
-      label: 'Open QR',
-      description: `Click here LINK to open the QR Code in the new Tab.`,
-    },
-    {
       label: 'Setup the Wifi',
-      description: `Scan the QR and setup the Wifi of your device`,
+      description: `Scan the QR and setup a stable Wifi on your Tablet`,
     },
     {
-      label: 'Setup the device',
-      description: `Once the wifi has been connected successfully and is stable, setup your device normally further`,
+      label: 'Setup the Tablet',
+      description: `Once the wifi has been connected successfully and is stable, setup your Tablet by following the instructions shown on your Tablet.`,
     },
     {
-      label: 'Consumer and Lock Test App Download',
-      description: `You will see the Consumer App and Lock Test App being downloaded in your device and the Consumer App will be pinned on your Device`,
+      label: 'Consumer App and Lock Test App Download',
+      description: `You will see the Consumer App and Lock Test App being downloaded on your Tablet and the Consumer App will be pinned.`,
     },
     {
       label: 'Ready for Deployment',
-      description: `Your Tablet is now ready for DEPLOYMENT in the store!`,
+      description: `Your Tablet is now ready for deployment in the store!`,
     },
     {
       label: 'Look Carefully',
-      optionalLabel: 'Last Step',
-      description: `Please see: If you want to UNPIN your Consumer app in the Tablet, Clicker here : <UnlockScript>`,
+      description: `PLEASE SEE: If you want to UNPIN your Consumer App, Click here : `,
     },
   ];

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { startMorningLoading, endMorningLoading, setMorningUrl } from '../app/slices/morningSetupSlice';
+import { toast } from 'react-hot-toast';
 
 const useMorningSetup = () => {
     const dispatch = useDispatch();
@@ -14,6 +15,7 @@ const useMorningSetup = () => {
             console.error('Error: ', error);
         } finally {
             dispatch(endMorningLoading());
+            toast.success('Pinned');
         }
     }
 

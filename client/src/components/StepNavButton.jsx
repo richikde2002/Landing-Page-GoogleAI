@@ -11,7 +11,7 @@ const StepNavButton = ({ buttonType, index }) => {
         variant="contained"
         onClick={() => dispatch(increment())}
       >
-        {index === 7 ? 'Done' : 'Continue'}
+        {index === 6 ? 'Done' : 'Continue'}
       </button>
     )
   } else if (buttonType === "prev") {

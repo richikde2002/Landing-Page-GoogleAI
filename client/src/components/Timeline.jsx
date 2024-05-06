@@ -26,13 +26,6 @@ const Timeline = () => {
           <Step key={step.label}>
 
             <StepLabel
-              optional={
-                step.optionalLabel ? (
-                  <p className="text-xs font-semibold">
-                    {step.optionalLabel}
-                  </p>
-                ) : null
-              }
               onClick={() => dispatch(navigate(index))}
             >
               <p className={`${index <= stepIndex ? "font-bold" : ""} cursor-pointer`}>
@@ -45,7 +38,7 @@ const Timeline = () => {
                 index === 1 ?
                   <MorningSetupComponent />
                   :
-                  index === 7 ?
+                  index === 6 ?
                     <UnlockScriptComponent />
                     :
                     <p className="text-sm font-normal">

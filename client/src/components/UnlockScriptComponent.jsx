@@ -11,7 +11,7 @@ const UnlockScriptComponent = () => {
   return (
     <div>
       <p className="text-sm">
-        Please see: If you want to UNPIN your Consumer app in the Tablet, Clicker here :
+        Please see: If you want to UNPIN your Consumer app in the Tablet, Click here :
         <button
           onClick={handleUnlockScript}
           className="bg-slate-700 hover:bg-[#3a78e2] text-white rounded-md mx-1.5 px-1.5 pb-0.5 transition"
@@ -24,12 +24,11 @@ const UnlockScriptComponent = () => {
             :
             "Unlock Script"}
         </button>
-
       </p>
 
-      {unlockRan && <div className='bg-green-500 text-white mx-auto text-center py-2 px-4 rounded-lg mt-4'>
-        <p className='font-semibold'>Script Ran Successfully</p>
-      </div>}
+      {/* {unlockRan && <div className='bg-green-500 text-white mx-auto text-center py-1 px-4 rounded-lg mt-4'>
+        <p className='font-semibold text-md'>Unpinned!</p>
+      </div>} */}
     </div>
   )
 }
