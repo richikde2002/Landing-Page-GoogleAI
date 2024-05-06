@@ -6,10 +6,11 @@ import StepContent from '@mui/material/StepContent';
 import Button from '@mui/material/Button';
 import { steps } from '../constants/data';
 import { useDispatch, useSelector } from 'react-redux';
-import { increment, decrement, navigate, reset } from '../app/slices/stepSlice';
+import { navigate } from '../app/slices/stepSlice';
 import useReset from '../controllers/useReset';
 import MorningSetupComponent from './MorningSetupComponent';
 import UnlockScriptComponent from './UnlockScriptComponent';
+import StepNavButton from './StepNavButton';
 
 const Timeline = () => {
   const dispatch = useDispatch();
@@ -53,20 +54,8 @@ const Timeline = () => {
               }
 
               <div className="mb-2 mt-2 flex gap-2">
-                <button
-                  className="bg-[#4285F4] hover:bg-[#3a78e2] text-white py-1.5 px-3 rounded-md mt-1 transition"
-                  variant="contained"
-                  onClick={() => dispatch(increment())}
-                >
-                  {index === steps.length - 1 ? 'Done' : 'Continue'}
-                </button>
-                <button
-                  className="bg-white hover:bg-zinc-100 text-[#4285F4] py-1.5 px-3 rounded-md mt-1 transition"
-                  disabled={index === 0}
-                  onClick={() => dispatch(decrement())}
-                >
-                  Back
-                </button>
+                <StepNavButton buttonType="next" index={index} />
+                <StepNavButton buttonType="prev" index={index} />
               </div>
             </StepContent>
 
@@ -82,7 +71,7 @@ const Timeline = () => {
           </Button>
         </div>
       )}
-      
+
     </div>
   )
 }
