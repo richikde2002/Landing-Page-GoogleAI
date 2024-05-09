@@ -1,10 +1,10 @@
 export const steps = [
     {
       label: 'Factory Reset',
-      description: `Factory Data Reset your Tablet and on the first screen of start-up tap multiple times until a QR Scanner comes up.`,
+      description: `Factory Data Reset your Tablet and tap the first screen of start-up for the QR Scanner to show up. Please note this may require you to tap multiple times.`,
     },
     {
-      label: 'Morning Setup',
+      label: 'PIN Set-up',
       description: 'Click on the morning setup button to generate a QR Code in the new tab.',
     },
     {
@@ -13,7 +13,7 @@ export const steps = [
     },
     {
       label: 'Setup the Tablet',
-      description: `Once the wifi has been connected successfully and is stable, setup your Tablet by following the instructions shown on your Tablet.`,
+      description: `Once the wifi has been connected successfully and is stable, setup your Tablet by following the instructions shown on the screen.`,
     },
     {
       label: 'Consumer App and Lock Test App Download',
@@ -24,7 +24,7 @@ export const steps = [
       description: `Your Tablet is now ready for deployment in the store!`,
     },
     {
-      label: 'Look Carefully',
+      label: 'Steps to Unpin Tablet',
       description: `PLEASE SEE: If you want to UNPIN your Consumer App, Click here : `,
     },
   ];
