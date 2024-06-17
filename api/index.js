@@ -27,9 +27,9 @@ ssh.connect({
 function runScript(filename, callback) {
   let scriptPath;
   if (filename === 'UnlockScript') {
-    scriptPath = '/home/vanshaj_arora_sg/PinUS.py';
+    scriptPath = '/home/vanshaj_arora_sg/UnlockScript.py';
   } else if (filename === 'morningSetup') {
-    scriptPath = '/home/vanshaj_arora_sg/UnpinUS.py';
+    scriptPath = '/home/vanshaj_arora_sg/morningSetup.py';
   } else {
     scriptPath = '/home/vanshaj_arora_sg/testlit.py';
   }
