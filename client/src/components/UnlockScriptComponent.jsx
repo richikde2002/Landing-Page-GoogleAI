@@ -11,7 +11,7 @@ const UnlockScriptComponent = () => {
   return (
     <div>
       <p className="text-sm">
-        Please see: If you want to UNPIN your Consumer app in the Tablet, Click here :
+        Bitte beachten Sie: Wenn Sie die PIN Ihrer Verbraucher-App auf dem Tablet aufheben möchten, klicken Sie hier:
         <button
           onClick={handleUnlockScript}
           className="bg-slate-700 hover:bg-[#3a78e2] text-white rounded-md mx-1.5 px-1.5 pb-0.5 transition"

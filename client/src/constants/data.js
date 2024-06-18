@@ -1,30 +1,30 @@
 export const steps = [
     {
-      label: 'Factory Reset',
-      description: `Factory Data Reset your Tablet and tap the first screen of start-up for the QR Scanner to show up. Please note this may require you to tap multiple times.`,
+      label: 'Werkseinstellungen zurückgesetzt',
+      description: `Setzen Sie Ihr Tablet auf die Werkseinstellungen zurück und tippen Sie auf den ersten Startbildschirm, damit der QR-Scanner angezeigt wird. Bitte beachten Sie, dass Sie hierfür möglicherweise mehrmals tippen müssen.`,
     },
     {
       label: 'PIN Set-up',
-      description: 'Click on the morning setup button to generate a QR Code in the new tab.',
+      description: 'Klicken Sie auf die Schaltfläche „Morgen-Setup“, um im neuen Tab einen QR-Code zu generieren.',
     },
     {
-      label: 'Setup the Wifi',
-      description: `Scan the QR and setup a stable Wifi on your Tablet`,
+      label: 'Richten Sie das WLAN ein',
+      description: `Scannen Sie den QR und richten Sie ein stabiles WLAN auf Ihrem Tablet ein`,
     },
     {
-      label: 'Setup the Tablet',
-      description: `Once the wifi has been connected successfully and is stable, setup your Tablet by following the instructions shown on the screen.`,
+      label: 'Richten Sie das Tablet ein',
+      description: `Sobald die WLAN-Verbindung erfolgreich hergestellt wurde und stabil ist, richten Sie Ihr Tablet ein, indem Sie den Anweisungen auf dem Bildschirm folgen.`,
     },
     {
-      label: 'Consumer App and Lock Test App Download',
-      description: `You will see the Consumer App and Lock Test App being downloaded on your Tablet and the Consumer App will be pinned.`,
+      label: 'Download der Consumer-App und der Lock-Test-App',
+      description: `Sie werden sehen, dass die Consumer-App und die Lock Test App auf Ihr Tablet heruntergeladen werden und die Consumer-App angeheftet wird.`,
     },
     {
-      label: 'Ready for Deployment',
-      description: `Your Tablet is now ready for deployment in the store!`,
+      label: 'Bereit für den Einsatz',
+      description: `Ihr Tablet ist jetzt für den Einsatz im Store bereit!`,
     },
     {
       label: 'Steps to Unpin Tablet',
-      description: `PLEASE SEE: If you want to UNPIN your Consumer App, Click here : `,
+      description: `BITTE BEACHTEN: Wenn Sie die PIN Ihrer Verbraucher-App aufheben möchten, klicken Sie hier:`,
     },
   ];
