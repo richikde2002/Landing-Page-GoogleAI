@@ -13,7 +13,7 @@ const App = () => {
       />
       <Navbar />
       <div className="max-w-lg min-h-screen mx-auto pt-28 flex flex-col gap-8 justify-start bg-zinc-50 z-50">
-        <h1 className="font-semibold text-3xl text-left px-8 md:px-6 lg:px-4 xl:px-2">Steps for your Consumer App</h1>
+        <h1 className="font-semibold text-3xl text-left px-8 md:px-6 lg:px-4 xl:px-2">Schritte für Ihre Verbraucher-App</h1>
         <Timeline />
       </div>
       <img
