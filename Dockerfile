@@ -32,7 +32,7 @@ COPY --from=build /app/api ./api
 COPY --from=build /app/node_modules ./node_modules
 
 # Copy the built client files
-COPY --from=build /app/client/build ./client/build
+COPY --from=build /app/client/dist ./client/dist
 
 # Expose the port your app runs on
 EXPOSE 3000
