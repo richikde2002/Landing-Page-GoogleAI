@@ -27,14 +27,14 @@ ssh.connect({
 function runScript(filename, callback) {
   let scriptPath;
   if (filename === 'UnlockScript') {
-    scriptPath = '/home/vanshaj_arora_sg/PinDE.py';
+    scriptPath = 'PinDE.py';
   } else if (filename === 'morningSetup') {
-    scriptPath = '/home/vanshaj_arora_sg/UnpinDE.py';
+    scriptPath = 'UnpinDE.py';
   } else {
-    scriptPath = '/home/vanshaj_arora_sg/testlit.py';
+    scriptPath = 'testlit.py';
   }
 
-  ssh.execCommand(`python3 ${scriptPath}`)
+  ssh.execCommand(`cd /home/vanshaj_arora_sg/ && python3 ${scriptPath}`)
     .then((result) => {
       callback(null, result.stdout);
     })
